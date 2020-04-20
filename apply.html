@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/BootStrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Fontawsome/css/all.min.css">
+    <link rel="stylesheet" href="/src/css/apply.css">
     <title>Application</title>
 </head>
 <body>
     <div class="container">
-        <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
             <a href="#" class="navbar-brand">
                 <img src="/src/img/logo.png" width="50px" height="50px" alt="logo" class="rounded">
                 Se-L
@@ -52,11 +53,70 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                   </form>
             </div>
         </nav>
-
+        <div class="applyform">
+            <div class="card card-body">
+                <h2>School Admission Form</h2>
+                <p class="lead">Dear Parent/Guardian,</p>
+                <p class="lead">
+                    Welcome to our school's Admission Center. Please use this form to apply 
+                    for your child's admission to our school. We need complete and accurate 
+                    information about the student, so make sure you fill out all fields. 
+                    School Admission Forms are processed within 48 hours. 
+                    You will receive an email confirmation when we process your application.
+                </p>
+                <form form1>
+                   <div class="row">
+                        <div class="col-md-6 form-group">
+                            <div>
+                                <label for="firstName">First Name:</label>
+                            <input type="text" id="sfirstName" name="firstName" placeholder="Enter First Name" class="form-control">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" name="lastName" id="slastName" placeholder="Enter Last Name" class="form-control">
+                            </div>
+                            <div>
+                                <label for="dob">Date of Birth</label>
+                                <input type="text" name="dob" id="DOB" placeholder="mm/dd/yy" class="form-control">
+                                <label for="sex"><input type="checkbox" class="form-check-input-inline">Male</label>
+                                <label for="sex"><input type="checkbox" class="form-check-input-inline">Female</label>
+                            </div>
+                            <div>
+                                <label for="">choose Institution:</label>
+                                <select>
+                                    <option value="">University Of Nigeria Nsukka</option>
+                                    <option value="">Bowen Universty</option>
+                                    <option value="">Hillcrest International School</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="entry">Entry Level:</label>
+                                <input type="text" name="entry" id="level" placeholder="Level/Class" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <div>
+                                <label for="name">Parent's/Guardian   Full Name:</label>
+                                <input type="text" name="name" id="guidian" placeholder="Enter Full Name" class="form-control">
+                                <label for="job">Occupation:</label>
+                                <input type="text"name="job" id="job" placeholder="Occupation" class="form-control">
+                            </div>
+                            <div>
+                                <label for="nation">State of Origin:</label>
+                                <input type="text" name="nation" id="nation" placeholder="Enter State of origin" class="form-control">
+                                <label for="address">Residential Address:</label>
+                                <input type="text" name="address" id="homeid" placeholder="Address" class="form-control">
+                                <label for="mail">Email:</label>
+                                <input type="text" name="mail" id="email" placeholder="Enter Email" class="form-control">
+                            </div>
+                        </div>
+                        <button class="btn btn-lg btn-primary">Submit Application</button>
+                   </div> 
+                </form> 
+            </div>
+        </div>
         <footer class="small bg-foot">
             <div class="container ">
                 <div class="row">
@@ -97,7 +157,7 @@
                         </address>
                     </div>
                 </div>
-                <ul class="list-inline justify-center text-center">
+                <ul class="list-inline justify-center text-center copy">
                     <li class="list-inline-item">Copyright &copy; 2020 Se-L</li>
                     <li class="list-inline-item">All Rights Reserved.</li>
                 </ul>

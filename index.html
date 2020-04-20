@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
             <a href="#" class="navbar-brand">
                 <img src="/src/img/logo.png" width="50px" height="50px" alt="logo" class="rounded">
                 Se-L
@@ -53,25 +53,37 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                   </form>
             </div>
         </nav>
-        <div class="slider">
-            <img src="/src/img/exam.jpg" alt="" class="slideImg">
-            <img src="/src/img/primary.jpg" alt="" class="slideImg">
-            <img src="/src/img/study.jpg" alt="" class="slideImg">
+        <div id="carouselid" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselid" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselid" data-slide-to="1"></li>
+              <li data-target="#carouselid" data-slide-to="2"></li>
+            </ol> 
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/src/img/exam.jpg" class="d-block w-100 sly" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/src/img/primary.jpg" class="d-block w-100 sly" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/src/img/study.jpg" class="d-block w-100 sly" alt="...">
+              </div>
+            </div>
         </div>
-        <section>
-            <p class="lead">
+        <section card card-body>
+            <p class="lead main">
                 Regular e-learning platform provides students with a self-directed learning system but Se-L 
                 offers your school a platform on which they can offer you the same exact learning services 
                 they have been providing (with very little modification in methodology) prior to the COVID19 
                 pandemic, except that this time, there is not physical meeting. Ceteris Paribus, each 
                 student under the Se-L platform will still be taught by their usual lecturers and teachers, 
                 retain the same class and classmates and most importantly, progress with their normal school 
-                curriculum seamlessly, regardless of the current pandemic.<br>
-                <button class="btn btn-info btn-lg">Try out Se-L Today...</button>
+                curriculum seamlessly, regardless of the current pandemic.
             </p>
         </section>
         <footer class="small bg-foot">
@@ -114,7 +126,7 @@
                         </address>
                     </div>
                 </div>
-                <ul class="list-inline justify-center text-center">
+                <ul class="list-inline justify-center text-center copy">
                     <li class="list-inline-item">Copyright &copy; 2020 Se-L</li>
                     <li class="list-inline-item">All Rights Reserved.</li>
                 </ul>

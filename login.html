@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/BootStrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Fontawsome/css/all.min.css">
+    <link rel="stylesheet" href="/src/css/login.css">
     <title>Login</title>
 </head>
 <body>
     <div class="container">
-        <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
             <a href="#" class="navbar-brand">
                 <img src="/src/img/logo.png" width="50px" height="50px" alt="logo" class="rounded">
                 Se-L
@@ -52,8 +53,8 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
         </nav>
         <div class="row">
@@ -62,17 +63,17 @@
             </div>
             <div class="col-md-6">
                 <section>
-                    <p class="lead">
+                    <p class="lead main">
                         Education is the passport to the future, for tomorrow belongs to those who prepare for it today,
                         Your attitude, not your aptitude, will determine your altitude. To access your course content <br>
                         <button class="btn btn-primary btn-lg">Sign In Now</button>
                     </p>
                 </section>
                 <div>
-                    <h4>Choose login options below:</h4>
-                    <button class="btn btn-lg btn-light" data-toggle="collapse" data-target="#adminform">Admin</button>
-                    <button class="btn btn-lg btn-light" data-toggle="collapse" data-target="#teachform">Teacher</button>
-                    <button class="btn btn-lg btn-light" data-toggle="collapse" data-target="#studentform">Student</button>
+                    <h4 class="hide">Choose login options below:</h4>
+                    <button class="btn btn-lg btnav hide" data-toggle="collapse" data-target="#adminform">Admin</button>
+                    <button class="btn btn-lg btnav hide" data-toggle="collapse" data-target="#teachform">Teacher</button>
+                    <button class="btn btn-lg btnav hide" data-toggle="collapse" data-target="#studentform">Student</button>
                     <div class="collapse" id="studentform">
                         <div class="card card-body">
                             <form>
@@ -108,7 +109,7 @@
                                     <input type="text" name="pswd" id="tpass" placeholder="Enter Password" class="form-control">
                                 </div>
                                 <button class="btn btn-primary btn-lg">Login</button>
-                                <span>Don't have an Account? <a href="/signup.html">SignUp Here!</a></span> <br>
+                                <span>Don't have an Account? <a href="#" data-toggle="modal" data-target="#signModal">SignUp Here!</a></span> <br>
                                 <span>Forgot Password?<a href="#">Click here</a></span>
                             </form>
                         </div>
@@ -130,9 +131,25 @@
                                     <input type="text" name="pswd" id="Apass" placeholder="Enter Password" class="form-control">
                                 </div>
                                 <button class="btn btn-primary btn-lg">Login</button>
-                                <span>Don't have an Account? <a href="/signup.html">SignUp Here!</a></span> <br>
+                                <span>Don't have an Account? <a href="#" data-toggle="modal" data-target="#signModal">SignUp Here!</a></span> <br>
                                 <span>Forgot Password?<a href="#">Click here</a></span>
                             </form>
+                        </div>
+                    </div>
+                    <div class="modal fade" data-backdrop="static" role="dialog" id="signModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Ooops!</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>something went wrong please contact the management.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -178,7 +195,7 @@
                         </address>
                     </div>
                 </div>
-                <ul class="list-inline justify-center text-center">
+                <ul class="list-inline justify-center text-center copy">
                     <li class="list-inline-item">Copyright &copy; 2020 Se-L</li>
                     <li class="list-inline-item">All Rights Reserved.</li>
                 </ul>

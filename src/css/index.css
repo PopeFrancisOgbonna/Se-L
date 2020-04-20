@@ -1,3 +1,21 @@
+
+.main{
+    text-align: justify;
+    padding: 5px;
+    margin: 10px 0px;
+    font: 1.2em;
+}
+footer{
+    background: #252424;
+    color: #fff;
+    padding: 10px;
+}
+.copy{
+    font-size: 1em;
+}
+.sly{
+    height: 400px;
+}
 .hide{
     display: none;
 }

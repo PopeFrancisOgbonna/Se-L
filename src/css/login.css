@@ -1,0 +1,27 @@
+.col-md-6 div,.col-md-6 section{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.hide{
+    display: none;
+}
+footer{
+    background: #252424;
+    color: #fff;
+    padding: 10px;
+}
+.copy{
+    font-size: 1em;
+}
+.modal-footer button{
+    background:grey;
+    color:whitesmoke;
+}
+.main{
+    font: 1.5em;
+    text-align: justify;
+}
+.btnav{
+    background: gray;
+    color:#fff;
+}

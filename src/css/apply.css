@@ -1,0 +1,23 @@
+
+.card{
+    margin:10px auto;
+    width:65%;
+    background:#d6bcbc83;
+}
+
+.form1{
+    border:2px solid rgb(199, 196, 196);
+    padding:15px;
+    border-radius: 5px;
+}
+.btn{
+    margin-left: 10px;
+}
+footer{
+    background: #252424;
+    color: #fff;
+    padding: 10px;
+}
+.copy{
+    font-size: 1em;
+}
