@@ -65,51 +65,26 @@
                 <section>
                     <p class="lead main">
                         Education is the passport to the future, for tomorrow belongs to those who prepare for it today,
-                        Your attitude, not your aptitude, will determine your altitude. To access your course content <br>
-                        <button class="btn btn-primary btn-lg" id="in">Sign In Now</button>
+                        Your attitude, not your aptitude, will determine your altitude.
                     </p>
                 </section>
                 <div>
-                    <div class="In-option hide">
-                        <h4 class="">Choose login options below:</h4>
-                    <button class="btn btn-lg teachf btnav">Teacher</button>
-                    <button class="btn btn-lg studentf btnav">Student</button>
-                    </div>
-                    <div class="hide" id="studentform">
+                    <div id="adminform">
                         <div class="card card-body">
-                            <h6 class="text-center">Student Login</h6>
-                            <form>
-                                <span class="warning"></span>
-                                <div class="form-group">
-                                    <label for="Email">Email/Username:</label>
-                                    <input type="text" name="Email" id="mail" placeholder="Enter Email/Username" class="form-control">
-                                    <label for="institute">Institution:</label>
-                                    <input type="text" name="institute" id="school" placeholder="Enter Institution" class="form-control">
-                                    <label for="pswd">Password:</label>
-                                    <input type="text" name="pswd" id="pass" placeholder="Enter Password" class="form-control">
-                                </div>
-                                <button class="btn btn-primary btn-lg">Login</button>
-                                <span>Don't have an Account? <a href="/signup.html">SignUp Here!</a></span> <br>
-                                <span>Forgot Password?<a href="#">Click here</a></span>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="hide" id="teachform">
-                        <div class="card card-body">
-                            <h6 class="text-center">Teachers' Login</h6>
+                            <h6 class="text-center">Admin Login</h6>
                             <form>
                                 <span class="warning"></span>
                                 <div class="form-group">
                                     <label for="Email">Email/Staff ID:</label>
-                                    <input type="text" name="Email" id="tmail" placeholder="Enter Email/Username" class="form-control">
+                                    <input type="text" name="Email" id="Admail" placeholder="Enter Email/Username" class="form-control">
                                     <label for="institute">Institution:</label>
-                                    <input type="text" name="institute" id="tschool" placeholder="Enter Institution" class="form-control">
+                                    <input type="text" name="institute" id="Adschool" placeholder="Enter Institution" class="form-control">
                                     <label for="dept">Department:</label>
-                                    <input type="text" name="dept" id="teachDept" placeholder="Enter Department" class="form-control">
-                                    <label for="cous">Course:</label>
-                                    <input type="text" name="cous" id="tcourse" placeholder="Enter Course you Handle" class="form-control">
+                                    <input type="text" name="dept" id="ADept" placeholder="Enter Department" class="form-control">
+                                    <label for="role">Role:</label>
+                                    <input type="text" name="cous" id="Arole" placeholder="Enter your Role" class="form-control">
                                     <label for="pswd">Password:</label>
-                                    <input type="text" name="pswd" id="tpass" placeholder="Enter Password" class="form-control">
+                                    <input type="text" name="pswd" id="Apass" placeholder="Enter Password" class="form-control">
                                 </div>
                                 <button class="btn btn-primary btn-lg">Login</button>
                                 <span>Don't have an Account? <a href="#" data-toggle="modal" data-target="#signModal">SignUp Here!</a></span> <br>
@@ -185,7 +160,6 @@
         <script src="/BootStrap/js/jquery-3.4.1.min.js"></script>
         <script src="/BootStrap/js/bootstrap.bundle.min.js"></script>
         <script src="/Fontawsome/js/all.min.js"></script>
-        <script src="/src/js/login.js"></script>
     </div>
 </body>
 </html>

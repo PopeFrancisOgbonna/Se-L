@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/BootStrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Fontawsome/css/all.min.css">
+    <link rel="stylesheet" href="/src/css/signup.css">
     <title>Sign Up</title>
 </head>
 <body>
     <div class="container">
-        <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
             <a href="#" class="navbar-brand">
                 <img src="/src/img/logo.png" width="50px" height="50px" alt="logo" class="rounded">
                 Se-L
@@ -52,11 +53,39 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                   </form>
             </div>
         </nav>
-
+        <div class="card card-body">
+            <h3 class="">Sign Up</h5>
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstName">First Name:</label> 
+                        <input type="text" name="firstName" id="name" placeholder="Enter First Name" class="form-control">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lname" placeholder="Enter Last Name" class="form-control">
+                        <label for="phone">Mobile No:</label>
+                        <input type="text" name="phone" id="mobile" placeholder="Enter Mobile Number" class="form-control">
+                        <label for="mail">Email Address:</label>
+                        <input type="text" name="mail" id="mail" placeholder="Enter Email" class="form-control">
+                     </div>
+                     <div class="form-group col-md-6">
+                        <label for="school">Institution:</label>
+                        <input type="text" name="school" id="school" placeholder="Enter Institution" class="form-control">
+                        <label for="dept">Department:</label>
+                        <input type="text" name="dept" id="dept" placeholder="Enter Department" class="form-control">
+                        <label for="password">Pass Word:</label>
+                        <input type="password" name="password" id="pswd" placeholder="Enter Pass Word" class="form-control">
+                        <label for="confirm">Confirm Pass Word:</label>
+                        <input type="password" name="confirm" id="pass2" placeholder="Confirm Pass Word" class="form-control">
+                     </div>
+                </div>
+                <button class="btn btn-primary btn-lg">Create Account</button>
+                <span>Already have an Account? <a href="/login.html">Login here.</a></span>
+            </form>
+        </div>
         <footer class="small bg-foot">
             <div class="container ">
                 <div class="row">
@@ -97,7 +126,7 @@
                         </address>
                     </div>
                 </div>
-                <ul class="list-inline justify-center text-center">
+                <ul class="list-inline justify-center text-center copy">
                     <li class="list-inline-item">Copyright &copy; 2020 Se-L</li>
                     <li class="list-inline-item">All Rights Reserved.</li>
                 </ul>
